@@ -11,7 +11,7 @@ const Home = () => {
                tshirts.map(tshirt => <Tshirt tshirt={tshirt} key={tshirt.id}></Tshirt>)
             }
         </div>
-        <div className="products bg-cart-color">
+        <div className="products bg-orange-400">
             <p>cart</p>
         </div>
     </div>
