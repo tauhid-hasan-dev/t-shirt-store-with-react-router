@@ -18,6 +18,11 @@ const Home = () => {
         }    
     }
 
+    const handleDeleteItem = (tshirt) =>{
+      const remainingItems = cart.filter(ts => ts._id !== tshirt._id);
+      setCart(remainingItems)
+    }
+
     
     return (
         <div className='grid grid-cols-5'>
@@ -33,7 +38,7 @@ const Home = () => {
             }
         </div>
         <div className="products bg-orange-400">
-            <Cart cart = {cart}></Cart>
+            <Cart cart = {cart}  handleDeleteItem = {handleDeleteItem}></Cart>
         </div>
     </div>
         
