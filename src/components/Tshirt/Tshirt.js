@@ -2,7 +2,7 @@ import React from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Tshirt = ({tshirt}) => {
+const Tshirt = ({tshirt, handleAddtoCart}) => {
     const {name, picture} = tshirt;
     return (
         <div className=' border-[1px] rounded-lg relative '>
@@ -12,7 +12,7 @@ const Tshirt = ({tshirt}) => {
                         <p className='font-semibold'>{name}</p>
                 </div>
             </div>
-            <button className="bg-btn-color hover:bg-orange-400 text-black py-3 px-4 rounded-b absolute bottom-0 w-full flex items-center justify-center gap-3">
+            <button className="bg-orange-400 hover:bg-orange-600 text-black py-3 px-4 rounded-b absolute bottom-0 w-full flex items-center justify-center gap-3" onClick={()=>handleAddtoCart(tshirt)}>
                 <p>Add to cart</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
