@@ -20,9 +20,9 @@ const Header = () => {
     }
             >Home</NavLink>
 
-                    <NavLink to='/menu' className={({ isActive }) =>
+                    <NavLink to='/grandpa' className={({ isActive }) =>
       isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
-    } >Menu</NavLink>
+    } >Grandpa</NavLink>
 
                     <NavLink to='/orders' className={({ isActive }) =>
       isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
@@ -47,9 +47,9 @@ const Header = () => {
     }
             >Home</NavLink>
 
-                    <NavLink to='/menu' className={({ isActive }) =>
+                    <NavLink to='/grandpa' className={({ isActive }) =>
       isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
-    } >Menu</NavLink>
+    } >Grandpa</NavLink>
 
                     <NavLink to='/orders' className={({ isActive }) =>
       isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
